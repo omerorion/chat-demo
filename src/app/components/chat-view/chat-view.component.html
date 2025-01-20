@@ -1,8 +1,7 @@
 <div class="chat-view-scroll" #chatView>
   <div *ngFor="let message of chat">
     <div class="chat-message-container"
-         [class.user-input]="message.type === ChatMessageType.USER_INPUT"
-    >
+         [class.user-input]="message.type === ChatMessageType.USER_INPUT">
       <div
         class="chat-message">
         {{ message.text }}
