@@ -1,0 +1,15 @@
+<div class="input-container">
+  <textarea type="text"
+            #textAreaElement
+            placeholder="Type here..."
+            autofocus
+            (keyup)="checkDisabled()"
+            (keydown.enter)="onEnter($event)"
+            [(ngModel)]="userInput"></textarea>
+  <div class="btn-container">
+    <app-button
+      [disabled]="disableButton"
+      (clicked)="onSendMessage()"
+    />
+  </div>
+</div>

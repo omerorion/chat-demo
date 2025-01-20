@@ -1,0 +1,25 @@
+@import "../../../styles.scss";
+
+.chat-view-scroll {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.chat-message-container {
+  display: flex;
+  &.user-input {
+    justify-content: end;
+    div {
+      background-color: $background-gray;
+    }
+  }
+}
+
+.chat-message {
+  display: inline-flex;
+  max-width: 80%;
+  width: auto;
+  padding: 10px 20px;
+  border-radius: 24px;
+  margin-bottom: 16px;
+}
